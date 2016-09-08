@@ -12,9 +12,20 @@ Deck.prototype.createNumbers = function() {
 Deck.prototype.shuffleNumbers = function(numbers) {
   var shuffled = _.shuffle(numbers);
   return shuffled;
-}
+};
+
+Deck.prototype.createCards = function(shuffled) {
+  for (var i = 0; i < shuffled.length; i++){
+    var card = new Card(shuffled[i]);
+    this.cards.push(card);
+      }
+  return this.cards;
+};
 
 var deck = new Deck;
 var nums = deck.createNumbers();
 var shuffled = deck.shuffleNumbers(nums);
-console.log(shuffled);
+var cards = deck.createCards(shuffled);
+var all = this.cards;
+console.log(all);
+

@@ -9,6 +9,12 @@ Deck.prototype.createNumbers = function() {
   return combine;
 };
 
+Deck.prototype.shuffleNumbers = function(numbers) {
+  var shuffled = _.shuffle(numbers);
+  return shuffled;
+}
+
 var deck = new Deck;
 var nums = deck.createNumbers();
-console.log(nums);
+var shuffled = deck.shuffleNumbers(nums);
+console.log(shuffled);

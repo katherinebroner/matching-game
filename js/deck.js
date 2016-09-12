@@ -26,6 +26,7 @@ var deck = new Deck;
 var nums = deck.createNumbers();
 var shuffled = deck.shuffleNumbers(nums);
 var cards = deck.createCards(shuffled);
-var all = this.cards;
-console.log(all);
+// var all = this.cards;
+// var all = deck.cards;
+// console.log(all);
 

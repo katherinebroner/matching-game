@@ -18,11 +18,13 @@ $(document).ready(function() {
       var secondVal = $(this).attr("value");
       $(this).html(secondVal);
       if (game.compareCards(firstVal,secondVal)){
-        $('.clicked').removeClass('clicked').addClass('matched');
+        $('.clicked').removeClass('clicked').addClass('matched').css('background-color', 'red');
       }
       count = 0;
     }
+   if($('.matched').length == 20) {
+    alert("Game Over!");
+    $('.matched').removeClass('matched').html('').css('background-color', 'white');
+    }
   })
-
-
 });

@@ -21,3 +21,7 @@ Game.prototype.startGame = function() {
   this.assignCards(chunk);
 }
 
+Game.prototype.compareCards = function(first,second) {
+  return first == second;
+}
+

@@ -9,21 +9,16 @@ $(document).ready(function() {
     return nested;
   }
 
-  Game.prototype.assignCards = function(cards) {
+  Game.prototype.assignCards = function(nested) {
     for(var i = 0; i < 4; i++) {
       for(var j = 0; j < 5; j++) {
-        // debugger;
-        var cell = $("#row-" + i + " .col-" + j).html(cards[i][j]);
-        // debugger;
+        var cell = $("#row-" + i + " .col-" + j).attr(nested[i][j]);
       }
     }
-
   };
 
   game = new Game();
   cards = game.cards;
   chunk = game.chunkCards(cards);
-  console.log(chunk);
-  // assigned = game.assignCards(cards);
-  // console.log(game.cards);
-})
+  assigned = game.assignCards(chunk);
+});

@@ -7,7 +7,7 @@ h1 {
   margin: auto;
 }
 
-td {
+.cell {
   height: 125px;
   width: 125px;
   border: 1px solid black;

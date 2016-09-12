@@ -22,11 +22,10 @@ Deck.prototype.createCards = function(shuffled) {
   return this.cards;
 };
 
-var deck = new Deck;
-var nums = deck.createNumbers();
-var shuffled = deck.shuffleNumbers(nums);
-var cards = deck.createCards(shuffled);
-// var all = this.cards;
-// var all = deck.cards;
-// console.log(all);
+Deck.prototype.populateDeck = function() {
+  var nums = this.createNumbers();
+  var shuffled = this.shuffleNumbers(nums);
+  this.createCards(shuffled);
+};
+
 

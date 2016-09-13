@@ -1,3 +1,3 @@
-function Card (value) {
+function Card(value) {
   this.value = value || 0;
 }

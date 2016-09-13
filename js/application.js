@@ -25,6 +25,8 @@ $(document).ready(function() {
    if($('.matched').length == 20) {
     alert("Game Over!");
     $('.matched').removeClass('matched').html('').css('background-color', 'white');
+    location.reload();
     }
   })
 });
+

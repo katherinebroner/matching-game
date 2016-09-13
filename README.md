@@ -2,6 +2,7 @@
 A card matching game built using JavaScript, jQuery, and lodash
 
 #set up instructions
+- Fork the repository to your GitHub account
 - Clone the repository to your local machine
 - In the main 'matching-game' repository, type 'open index.html' into the command line
 - The game will open in a new tab on your browser
